@@ -9,7 +9,6 @@ class gitlab::ci::install inherits gitlab::ci {
 
   Exec {
     user => $ci_user,
-    path => $exec_path,
   }
 
   File {
