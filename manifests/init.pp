@@ -647,7 +647,6 @@ class gitlab(
   class { '::gitlab::package': } ->
   class { '::gitlab::install': } ->
   class { '::gitlab::config': } ->
-  class { '::gitlab::service': } ->
   anchor { 'gitlab::end': }
 
 } # Class:: gitlab
